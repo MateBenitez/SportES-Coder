@@ -1,0 +1,69 @@
+@mixin anclas {
+    background-color: $color-verde1;
+    color: $color-negro ;
+    text-decoration: none;
+}
+
+
+
+.navbar {
+    background-color: $color-verde2;
+}
+
+.collapse {
+    display: flex;
+    justify-content: right;
+}
+
+.logo {
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+    font-size: 30px;
+    color: $color-negro;
+
+    span {
+        color: green;
+    }
+}
+
+.nav-link {
+    color: $color-negro !important;
+}
+
+main {
+    height: 85vh;
+    width: 100%;
+    background-color: $color-gris;
+    background-image: url(img/oxford-534815_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.call {
+    color: $color-negro ;
+    width: 40%;
+    background-color: $color-verde2;
+    border: 4px solid $color-verde1;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: right;
+    margin: 20px;
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    a {
+        @include anclas;
+        padding: 10px 10px;
+
+        &:hover {
+            background-color: rgba(240, 248, 255, 0.238);
+        }
+    }
+}
+
+.jumbotron {
+    background-color: $color-verde1;
+}
