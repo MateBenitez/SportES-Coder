@@ -189,6 +189,15 @@ form {
   background-position: center;
 }
 
+.main4 {
+  height: 85vh;
+  width: 100%;
+  background-color: rgb(196, 196, 196);
+  background-image: url(img/b2ap3_amp_empresa-conjunta.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .redes a {
   font-size: 30px;
   color: rgb(8, 35, 0);
