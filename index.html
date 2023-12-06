@@ -12,102 +12,59 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark">
-          <div class="container-fluid">
-            <a class="logo" href="#">Sport<span>Es</span> </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsibleNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.hmtl">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/deportes.html">Deportes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/paises.html">Paises</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/universidades.html">Universidades</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+          <a class="logo" href="#">Sport<span>Es</span> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.hmtl">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/deportes.html">Deportes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/paises.html">Paises</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/universidades.html">Universidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="call">
-            <h1>Nuestro Objetivo</h1>
-            <p>Queremos que toda persona pueda seguir haciendo el deporte que ama con el acompañamiento de la mejor educación posible.</p>
-            <a href="">conócenos más</a>
-        </div>
+      <div class="call">
+        <h1>Nuestro Objetivo</h1>
+        <p>Queremos que toda persona pueda seguir haciendo el deporte que ama con el acompañamiento de la mejor educación posible.</p>
+        <a href="">conócenos más</a>
+    </div>
     </main>
 
-    <div class="jumbotron p-5 text-white rounded">
-        <h2>QUIENES SOMOS</h2>
-        <h3>
-            Somos una empresa que se dedica exclusivamente a ayudar a que las personas interesadas en estudiar, fuera o dentro de su país, puedan hacerlo de una forma más fácil y directa a través del deporte. Contamos con una gran red de Universidades, por todo el mundo, las cuales otorgan una gran variedad de becas gracias al deporte.
-        </h3>
+    <div class="container-fluid">
+        <script src="main.js"></script>
     </div>
 
-    <section class="section">
-      <article class="card">
-        <div class="card-img" alt="variedad de deportes"></div>
-        <h4>Deportes</h4>
-        <p>
-          Contamos con más de 15 deportes distintos para obtener variedad de
-          becas (soccer, football, tenis, natación, etc.)
-        </p>
-        <a href="links/deportes.html">Leer más</a>
-      </article>
-      <article class="card">
-        <div class="card-img1" alt="bibliotecas de universidades"></div>
-        <h4>Universidades</h4>
-        <p>
-          Contamos con una amplia variedad de universidades con distintos
-          niveles académicos y deportivos.
-        </p>
-        <a href="links/universidades.html">Leer más</a>
-      </article>
-      <article class="card">
-        <div class="card-img2" alt="mapa con diferentes paises"></div>
-        <h4>Países</h4>
-        <p>Tenemos presencia en más de 40 países.</p>
-        <a href="links/paises.html">Leer más</a>
-      </article>
-    </section>
+    <div class="container-fluid">
+        <div id="resultados">
+        </div>
+        <button id="btnMostrarResultados">Mostrar Resultados</button>
+    </div>
 
-    <div class="container-fluid" style="background-color: rgb(1, 83, 1)">
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const correo = prompt("Ingrese su correo electrónico:");
-                const telefono = prompt("Ingrese su número telefónico:");
-
-                const datosContacto = {
-                    correo: correo,
-                    telefono: telefono
-                };
-
-                enviarDatosContacto(datosContacto);
-            });
-
-            function enviarDatosContacto(datosContacto) {
-                console.log("Datos de contacto enviados:");
-                console.log("Correo electrónico:", datosContacto.correo);
-                console.log("Número telefónico:", datosContacto.telefono);
-                console.log("¡Gracias por enviar tus datos!");
-            }
-        </script>
+    <div class="container-fluid">
+        <button id="btnEnviarDatos">Enviar Datos de Contacto</button>
     </div>
 
     <div class="container-fluid">
