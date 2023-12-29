@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (datosContactoJSON) {
             const datosContacto = JSON.parse(datosContactoJSON);
 
+
             resultadosContainer.innerHTML = `
                 <h3>Resultados:</h3>
                 <p>Correo electrónico: ${datosContacto.correo}</p>
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mostrarResultados();
     });
 
+
     document.getElementById("btnEnviarDatos").addEventListener("click", function () {
         const correo = prompt("Ingrese su correo electrónico:");
         const telefono = prompt("Ingrese su número telefónico:");
@@ -48,4 +50,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         enviarDatosContacto(datosContacto);
     });
+
+
+    axios.get('https://jsonplaceholder.typicode.com/users/1')
+        .then(response => {
+            console.log('Datos de usuario desde la API (Axios):', response.data);
+        })
+        .catch(error => {
+            console.error('Error al obtener datos desde la API (Axios):', error);
+        });
 });
